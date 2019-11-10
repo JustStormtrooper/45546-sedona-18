@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Волгушев](https://up.htmlacademy.ru/adaptive/18/user/45546).
-* Наставник: `Неизвестно`.
+* Наставник: Михаил Савотиков.
 
 ---
 
