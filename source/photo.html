@@ -93,12 +93,13 @@
         </ul>
       </section>
       <section class="video-presentation">
-        <b class="video-presentation__title">Все еще сомневаетесь?</b>
+        <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
         <p class="video-presentation__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <video class="video-presentation__video" poster="https://via.placeholder.com/321x201" src="#">Встроенное видео не
           поддерживается вашим браузером.</video>
         <div class="video-presentation__slider">
-          <button class="video-presentation__slider-button">Перемотать</button>
+          <progress class="video-presentation__time-bar" value="30" max="100"></progress>
+          <input class="video-presentation__time-control" type="range" name="time-control" value="30">
         </div>
         <div class="video-presentation__controls">
           <button class="video-presentation__repeat">Повтор</button>
