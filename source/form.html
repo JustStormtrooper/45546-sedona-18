@@ -34,7 +34,85 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Форма отзыва Седона</h1>
-      <!-- <section class="review-form"></section> -->
+      <section class="review-form">
+        <header class="review-form__header">
+          <h2 class="review-form__title">Оставьте свой отзыв</h2>
+          <p class="review-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </header>
+        <form class="review-form__form" action="https://echo.htmlacademy.ru" method="post">
+          <section class="review-form__section">
+            <h3 class="review-form__section-headline">Представьтесь:</h3>
+            <p class="review-form__text-field">
+              <label class="review-form__text-label" for="author-name">Имя<sup>*</sup>:</label>
+              <input class="review-form__text-input" id="author-name" type="text" name="name" placeholder="Петр" required>
+            </p>
+            <p class="review-form__text-field">
+              <label class="review-form__text-label" for="author-surname">Фамилия<sup>*</sup>:</label>
+              <input class="review-form__text-input" id="author-surname" type="text" name="surname" placeholder="Иванов" required>
+            </p>
+            <p class="review-form__text-field">
+              <label class="review-form__text-label" for="author-middle-name">Отчество:</label>
+              <input class="review-form__text-input" id="author-middle-name" type="text" name="middle-name" placeholder="Александрович">
+            </p>
+          </section>
+          <section class="review-form__section">
+            <h3 class="review-form__section-headline">Контактная информация:</h3>
+            <p class="review-form__text-field">
+              <label class="review-form__text-label" for="author-phone">Контактный телефон<sup>*</sup>:</label>
+              <input class="review-form__text-input review-form__text-input--phone" id="author-phone" type="tel" name="phone"
+                placeholder="Введите телефон" required>
+            </p>
+            <p class="review-form__text-field">
+              <label class="review-form__text-label" for="author-email">Электронная почта<sup>*</sup>:</label>
+              <input class="review-form__text-input review-form__text-input--email" id="author-email" type="email" name="email"
+                placeholder="Введите e-mail" required>
+            </p>
+          </section>
+          <section class="review-form__section">
+            <h3 class="review-form__section-headline">Ваше общее впечатление:</h3>
+            <ul class="review-form__rate-list">
+              <li class="review-form__rate-item">
+                <input class="review-form__radio-input" id="positive-review" type="radio" name="rating-group" value="positive" checked>
+                <label class="review-form__radio-label" for="positive-review">Скорее положительное</label>
+              </li>
+              <li class="review-form__rate-item">
+                <input class="review-form__radio-input" id="negative-review" type="radio" name="rating-group" value="negative">
+                <label class="review-form__radio-label" for="negative-review">Скорее отрицательное</label>
+              </li>
+              <li class="review-form__rate-item">
+                <input class="review-form__radio-input" id="not-rated-review" type="radio" name="rating-group" value="not-rated">
+                <label class="review-form__radio-label" for="not-rated-review">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </section>
+          <section class="review-form__section">
+            <h3 class="review-form__section-headline">Посещенные достопримечательности:</h3>
+            <ul class="review-form__sight-list">
+              <li class="review-form__sight-item">
+                <input class="review-form__check-input" id="devil-bridge" type="checkbox" name="devil-bridge" checked>
+                <label class="review-form__check-label" for="devil-bridge">Мост Дьявола</label>
+              </li>
+              <li class="review-form__sight-item">
+                <input class="review-form__check-input" id="bell-rock" type="checkbox" name="bell-rock" checked>
+                <label class="review-form__check-label" for="bell-rock">Гора-Колокол</label>
+              </li>
+              <li class="review-form__sight-item">
+                <input class="review-form__check-input" id="slide-park" type="checkbox" name="slide-park" checked>
+                <label class="review-form__check-label" for="slide-park">Слайд-парк</label>
+              </li>
+              <li class="review-form__sight-item">
+                <input class="review-form__check-input" id="red-rocks" type="checkbox" name="red-rocks">
+                <label class="review-form__check-label" for="red-rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </section>
+          <section class="review-form__section">
+            <h3 class="review-form__section-headline">Опишите свои эмоции:</h3>
+            <textarea class="review-form__textarea">Опишите подробно все свои восторги</textarea>
+          </section>
+          <button class="review-form__submit" type="submit">Отправить отзыв</button>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
