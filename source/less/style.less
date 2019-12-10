@@ -1,60 +1,16 @@
-@font-face {
-  font-family: "PTSans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "PTSans";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@import "mixins.less";
-@import "variables.less";
+@import "common/general.less";
+@import "common/fonts.less";
+@import "common/mixins.less";
+@import "common/variables.less";
 @import "blocks/page-header.less";
 @import "blocks/main-nav.less";
 @import "blocks/site-list.less";
 @import "blocks/page-main.less";
-@import "blocks/adventages.less";
+@import "blocks/advantages.less";
 @import "blocks/hotel-search.less";
+@import "blocks/map.less";
 @import "blocks/page-footer.less";
+@import "blocks/social.less";
+@import "blocks/copyright.less";
 @import "blocks/gallery.less";
 @import "blocks/video-presentation.less";
-
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "PTSans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

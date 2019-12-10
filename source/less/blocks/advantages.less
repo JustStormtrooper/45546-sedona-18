@@ -57,20 +57,22 @@
   padding-bottom: 0;
 }
 
-.advantages__item:nth-child(n+3) {
-  background-color: @grey;
+.advantages__item {
+  &--gray-bkg {
+    background-color: @grey;
 
-  .advantages__title {
-    color: black;
-  }
+    .advantages__title {
+      color: black;
+    }
 
-  .advantages_number {
-    color: @black;
-  }
+    .advantages__number {
+      color: @black;
+    }
 
-  .advantages__description {
-    margin-bottom: 0;
-    color: @black;
+    .advantages__description {
+      margin-bottom: 0;
+      color: @black;
+    }
   }
 }
 
@@ -87,7 +89,7 @@
 }
 
 .advantages__title,
-.advantages_number,
+.advantages__number,
 .advantages__description {
   display: block;
   color: white;
